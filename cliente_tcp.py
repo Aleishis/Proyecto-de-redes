@@ -11,7 +11,7 @@ def main():
         mensaje = input("Escribe tu mensaje para enviar al servidor: ")
         
 
-        # Enviar mensaje como POST
+        #Enviar mensaje con POST
         conn.request("POST", "/", mensaje.encode(), {
             "Content-Type": "text/plain"
         })
